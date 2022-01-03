@@ -1,0 +1,14 @@
+
+.container{
+   
+}
+.section4{
+    --columns:2;
+    display: flex;
+    .section4Left{
+        width: calc(100% / var(--columns))
+    }
+    .section4Right{
+        width: calc(100% / --columns)
+    }
+}

@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+.footer{
+    background-color: #2b1b1b;
+}
+.footer-logo {
+    position:relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+.footer-logo img{
+    margin: 0 auto;
+    display: block;
+}
+.ket-noi .header{
+    color:var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.ket-noi .text-content{
+    color:#fff;
+}
+.ket-noi p{
+    color: #fff;
+}
+.ket-noi i{
+    color: var(--text-color);
+    margin-right: 10px;
+}
+.chinhsach .header{
+    color:var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.chinhsach .nav-list{
+    list-style: none;
+}
+.chinhsach .nav-list .nav_link{
+    margin-top: 5px;
+    
+}
+.chinhsach .nav-list .nav_link a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -18%;
+}
+@media (max-width: 1020px) {
+    .chinhsach .nav-list .nav_link a{
+        margin-left: -13%;
+    }
+}
+@media (max-width: 620px) {
+    .chinhsach .nav-list .nav_link a{
+        margin-left: -10%;
+    }
+}
+@media (max-width: 420px) {
+    .chinhsach .nav-list .nav_link a{
+        margin-left: -13%;
+    }
+}
+.chinhsach .nav-list .nav_link a:hover{
+    text-decoration: none;
+    color:var(--text-color)
+}
+.ban-quyen p{
+    color: #fff;
+}
+/*KETNOI*/
+.share{
+    margin-bottom: 20px;
+}
+.share i{
+    font-size:2rem;
+    color:#fff;
+    font-weight: 700;
+}
+.share a:not(:first-child){
+    margin-left: 10px;
+}
+
+.share i:hover{
+    color:#ffac4b;
+}
+hr{
+    background-color: rosybrown
+}
+.container {
+    margin-top:20px
+}

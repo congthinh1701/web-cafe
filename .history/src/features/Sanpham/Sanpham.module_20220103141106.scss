@@ -1,0 +1,20 @@
+
+
+.content{
+    --columns:2;
+    display: flex;
+    .MenuLeft{
+        width: calc(100% / var(--columns) - 23%);
+        height: 600px;
+        background-color: #f4f2ed;
+        border-radius: 5px;
+        padding: 15px 0 0 15px;
+        .Hr{
+            width: 90%;
+            
+        }
+    }
+    .Right{
+        width: calc(100% / var(--columns) + 23%);
+    }
+}

@@ -1,0 +1,20 @@
+
+
+.section4{
+    --columns:2;
+    display: flex;
+    .section4Left{
+        width: calc(100% / var(--columns) + 5%);
+        height:400px;
+        background-color:#7a5c3d;
+        position: relative;
+        .titleTop{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+    }
+    .section4Right{
+        width: calc(100% / var(--columns) - 5%)
+    }
+}

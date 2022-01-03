@@ -1,0 +1,16 @@
+
+.container{
+   
+}
+.section4{
+    --columns:2;
+    display: flex;
+    .section4Left{
+        width: calc(100% / var(--columns) + 10%);
+        height:400px;
+        background-color:;
+    }
+    .section4Right{
+        width: calc(100% / var(--columns) - 10%)
+    }
+}

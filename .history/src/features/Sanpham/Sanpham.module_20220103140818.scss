@@ -1,0 +1,20 @@
+
+
+.content{
+    --columns:2;
+    display: flex;
+    .MenuLeft{
+        width: calc(100% / var(--columns) - 25%);
+        height: 600px;
+        background-color: #f4f2ed;
+        border-radius: 5px;
+        .nav_bars-btn{
+            width: 30px;
+            height: 30px;
+            color: red;
+        }
+    }
+    .Right{
+        width: calc(100% / var(--columns) + 25%);
+    }
+}

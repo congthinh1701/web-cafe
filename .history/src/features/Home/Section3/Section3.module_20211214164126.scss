@@ -1,0 +1,54 @@
+.titleText{
+    text-align: center;
+    text-align: center;
+    padding:2% 0 3% 0;
+    h2{
+        color: #ffac4b;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    p{
+        color: black;
+        font-size:18px
+    }
+    @media (max-width:1024px){
+        h2{
+            font-size: 36px;
+        }
+    }
+    @media (max-width:724px){
+        h2{
+            font-size: 32px;
+        }
+    }
+    @media (max-width:524px){
+        h2{
+            font-size: 28px;
+        }
+    }
+    @media (max-width:414px){
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+.item{
+    border: 1px solid blue;
+    position: relative;    
+    .price{
+        width: 100px;
+        height: 35px;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 40%);
+        margin: 0 auto;
+        position: absolute;
+        top: 10%;
+       
+    }
+}
+ .item img{
+    width: 80%;
+    height: 250px;
+    border: 1px solid blue;
+    margin: 0 auto;
+    
+}

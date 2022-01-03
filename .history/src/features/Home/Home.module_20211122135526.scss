@@ -1,0 +1,21 @@
+
+.home_banner1{
+    
+    height: 400px;
+    border: 1px solid black;
+}
+#home_banner1{
+   height: 400px;
+   background-color: black;
+   @media (max-width: 500px){
+       height: 250px;
+       width: 90%;
+   }
+}
+
+.title {
+    color:red
+}
+.back{
+    background-color:black
+}

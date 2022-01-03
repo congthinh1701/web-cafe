@@ -1,0 +1,9 @@
+
+
+.content{
+    --columns:2;
+    display: flex;
+    .MenuLeft{
+        width: calc(100% / var(--columns));
+    }
+}

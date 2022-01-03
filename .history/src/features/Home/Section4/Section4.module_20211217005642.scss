@@ -1,0 +1,15 @@
+
+
+.section4{
+    --columns:2;
+    display: flex;
+    .section4Left{
+        width: calc(100% / var(--columns) + 5%);
+        height:400px;
+        background-color:#7a5c3d;
+        position: ;
+    }
+    .section4Right{
+        width: calc(100% / var(--columns) - 5%)
+    }
+}
