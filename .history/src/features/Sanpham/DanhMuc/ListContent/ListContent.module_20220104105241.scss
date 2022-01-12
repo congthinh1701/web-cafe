@@ -1,0 +1,10 @@
+
+
+.ListContent {
+    overflow: hidden;
+    max-height: 999;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    li {
+      border-bottom: 1px dashed #f4f2ed ;
+      list-style: none;
+    }

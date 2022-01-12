@@ -1,0 +1,158 @@
+.Right {
+  width: calc(100% / var(--columns) + 23%);
+  .filter{
+    margin: 0 20px 0 20px;
+    border: 0.5px solid aqua;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    width: 100%;
+    .listView{
+      display: flex;
+      justify-content: space-around;
+      margin-left: 20px;
+      align-items: center;
+      .viewModeList,.viewModeGird{
+        margin-left: 10px;
+        border: 0.5px solid aqua;
+        width: 32px;
+        height: 32px;
+        border-radius: 2px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      
+      .view.active{
+        background-color: #ffac4b;
+        i{
+          color: white;
+        }
+      }
+    }
+    .sortBy{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 10px;
+      width: 100%;
+      .sortName{
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .sortSelect{
+        select{
+          width: 200px;
+          height: 37px;
+        }
+      }
+    }
+  }
+  .RightList {
+    margin: 20px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    .item {
+      border: 0.5px solid aqua;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      position: relative;
+      width: 100%;
+      height: 260px;
+      img {
+        width: 90%;
+        height: 85%;
+        margin: 0 auto;
+      }
+      .price {
+        text-align: center;
+        line-height: 31px;
+        color: #ffac4b;
+        font-size: 17px;
+        font-weight: 600;
+        width: 100px;
+        height: 35px;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 40%);
+        position: relative;
+        top: -20px;
+        margin: 0 auto;
+        transition: all 0.5s ease 0s;
+        background-color: white;
+      }
+      .name {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+       
+        .nameTitle {
+          color: #333;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 16px;
+          transition: all 0.5s ease 0s;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        .price {
+          color: #fff;
+          background-color: #ffac4b;
+        }
+        .nameTitle {
+          color: #ffac4b;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 980px) {
+  .Right {
+    width: calc(100% / var(--columns) + 50%);
+  }
+}
+@media (max-width: 768px) {
+  .Right {
+    .filter{
+      .sortBy{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-right: 10px;
+      width: 100%;
+      .sortName{
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .sortSelect{
+        select{
+          width: 200px;
+          height: 37px;
+        }
+      }
+    }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .RightList {
+    margin: 0 auto !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    grid-gap: 4px !important;
+    width: 100%;
+    .item {
+      height: 230px !important;
+      img {
+        height: 80% !important;
+      }
+    }
+  }
+}

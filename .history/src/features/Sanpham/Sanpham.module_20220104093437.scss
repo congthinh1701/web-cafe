@@ -1,0 +1,50 @@
+.content {
+  --columns: 2;
+  display: flex;
+  .MenuLeft {
+    width: calc(100% / var(--columns) - 23%);
+    height: 600px;
+    background-color: #f4f2ed;
+    border-radius: 5px;
+    .DanhMuc {
+      margin: 15px 0 0 15px;
+    }
+    hr {
+      width: 95%;
+      background-color: #ffac4b;
+    }
+    .wrapper {
+      display: flex;
+      height: 100px;
+      width: 100px;
+    }
+    .ListDanhMuc {
+      .accordion {
+        .item {
+          background-color: #ffac4b;
+          margin-top: 10px;
+          .ListContent {
+            overflow: hidden;
+            max-height: 999;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+            li {
+              border: dashed #b1154a;
+            }
+          }
+          .ListContent.show {
+            height: auto;
+            max-height: 999;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+          }
+          .title {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+  .Right {
+    width: calc(100% / var(--columns) + 23%);
+  }
+}
