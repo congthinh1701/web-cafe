@@ -1,0 +1,26 @@
+.section6 {
+    position: relative;
+  .content {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+    .title-text {
+      h2 {
+        font-weight: 600;
+        color: #ffac4b;
+        font-size: 37px;
+      }
+      p{
+          color: #fff;
+          text-align: center;
+          margin-top: 10px;
+      }
+    }
+    .owl-content{
+        .avatar{
+            width: ;
+        }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+import React from "react";
+import { useSelector } from "react-redux";
+import "./style.scss";
+
+function Cart() {
+  const cart = useSelector((state) => state.cart);
+  console.log(cart.list);
+  return (
+    <div>
+      <div className="layoutCart">
+        <div className="title">
+          <p>GIỎ HÀNG CỦA BẠN</p>
+        </div>
+        <div className="cart">
+        {cart.list ? }
+          <div className="cartList">
+            <p>
+              Bạn có <span>2 sản phẩm </span>trong giỏ hàng
+            </p>
+            {cart.list.map((item,i)=>(
+              <div className="cartProduct">
+              <div className="left">
+                <img
+                  src={item.image}
+                  alt="anh"
+                />
+              </div>
+              <div className="right">
+                <p className="name">{item.name}</p>
+                <div className="quantity">
+                  <div className="number">
+                    <span className="giam">-</span>
+                    <input value="1" className="form-control" readOnly />
+                    <span className="tang">+</span>
+                  </div>
+                </div>
+
+                <div className="unitPrice">
+                  <p className="price">{item.price}</p>
+                </div>
+                <div className="total">
+                  <p>Thành tiền:</p>
+                  <p className="totalPrice">20000</p>
+                  <i class="fas fa-trash-alt"></i>
+                </div>
+              </div>
+            </div>
+            ))}
+            
+            {/* NOTE ORDER */}
+            <div className="noteOrder">
+              <div class="checkout-buttons clearfix">
+                <label for="note" class="note-label">
+                  Ghi chú đơn hàng
+                </label>
+                <textarea
+                  class="form-control"
+                  id="note"
+                  name="note"
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        
+          
+          <div className="infomationOrder">
+            <div className="continue">
+              <a href="/#">
+                Tiếp tục mua hàng <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div className="infomation">
+              <div className="title">
+                <p>Thông tin đơn hàng</p>
+              </div>
+              <hr />
+              <div className="price">
+                <p>Tổng tiền :</p>
+                <p>50000đ</p>
+              </div>
+              <hr />
+              <p>Bạn có thể nhập mã giảm giá ở trang thanh toán</p>
+              <button>THANH TOÁN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Cart;

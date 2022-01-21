@@ -1,0 +1,13 @@
+
+
+.detail{
+    display: flex;
+    --columns:2;
+    .detailLeft {
+        width: calc(100% / var(--columns) - 10%);
+        background-color: red;
+    }
+    .detailLeft {
+        width: calc(100% / var(--columns) + 10%);
+    }
+}

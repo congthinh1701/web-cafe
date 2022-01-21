@@ -1,0 +1,266 @@
+.layoutCart {
+  max-width: 90%;
+  margin: 0 auto;
+  .title {
+    color: #464646;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .cart {
+    --columns: 2;
+    display: flex;
+    margin-top: 20px;
+    .cartList {
+      width: calc(100% / var(--columns) + 27%);
+      background-color: #fafafa;
+      padding: 25px;
+      span {
+        font-weight: bold;
+      }
+      .cartProduct {
+        margin-top: 2px;
+        display: flex;
+        --column: 2;
+        background-color: white;
+        .left {
+          width: calc(100% / var(--column) - 30%);
+          padding: 15px;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        .right {
+          margin-top: 25px;
+          width: calc(100% / var(--column) + 30%);
+          display: flex;
+          .name {
+            font-size: 27px;
+            font-weight: 400;
+            color: #272727;
+            width: 30%;
+          }
+          .unitPrice {
+            width: 22%;
+            margin-top: 10px;
+            .price {
+              font-size: 18px;
+              color: #272727;
+            }
+          }
+          .total {
+            margin-top: -10px;
+            p {
+              font-size: 20px;
+            }
+            .totalPrice {
+              margin-top: -10px;
+              text-align: center;
+              font-size: 18px;
+              font-weight: bold;
+              color: #a73340;
+            }
+            i {
+              font-size: 22px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            i:hover {
+              cursor: pointer;
+              color: #ffac4b
+            }
+          }
+          .quantity {
+            display: flex;
+            width: 20%;
+            margin-top: 7px;
+
+            .number {
+              border-radius: 25px;
+              display: flex;
+              position: relative;
+              width: 90px;
+              input {
+                position: absolute;
+                left: 0px;
+                height: 30px;
+                width: 90px;
+                border-radius: 25px;
+                font-weight: 700;
+                font-size: 16px;
+                text-align: center;
+                border: 1px solid #ebebeb;
+              }
+              span {
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                font-size: 25px;
+                cursor: pointer;
+                color: #898989;
+                border: 1px solid #ebebeb;
+                line-height: 25px;
+                background-color: white;
+              }
+              .giam {
+                position: absolute;
+                left: 0;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                z-index: 1;
+              }
+              .tang {
+                position: absolute;
+                right: 0px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                z-index: 1;
+              }
+            }
+          }
+        }
+      }
+      .noteOrder{
+        margin-top: 20px;
+        label{
+          font-weight: 600;
+        }
+      }
+    }
+    .infomationOrder {
+      width: calc(100% / var(--columns) - 27%);
+      margin: -32px 0 0 20px;
+      .continue {
+        text-align: right;
+
+        margin-bottom: 10px;
+        font-size: 16px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      .infomation {
+        border: 1px solid aqua;
+        padding: 10px;
+        .title {
+          font-size: 17px;
+          font-weight: bold;
+          margin: 5px 0 10px 0;
+          color: #272727;
+          text-align: left;
+        }
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #272727;
+          font-size: 17px;
+          font-weight: bold;
+        }
+      }
+      button {
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 968px) {
+  .cart {
+    display: unset !important;
+    .cartList {
+      width: 100% !important;
+      .cartProduct {
+        .left {
+          width: calc(100% / var(--column) - 33%) !important;
+          img {
+            width: 80px !important;
+            height: 80px !important;
+          }
+        }
+        .right {
+          width: calc(100% / var(--column) + 33%) !important;
+          .name {
+            font-size: 22px !important;
+            width: 25% !important;
+          }
+          .unitPrice {
+            width: 25%;
+            margin-top: 10px;
+            .price {
+              font-size: 18px;
+              color: #272727;
+            }
+          }
+          .quantity {
+            width: 22% !important;
+          }
+          .total {
+            margin-bottom: 10px;
+            p {
+              font-size: 17px !important;
+            }
+          }
+        }
+      }
+    }
+    .infomationOrder {
+      width: 100% !important;
+      margin: 25px 0 0 0 !important;
+    }
+  }
+}
+@media(max-width:745px){
+  .cartList {
+    width: 100% !important;
+    .cartProduct{
+      width: 100% !;
+      display: unset !important;
+      
+      .left {
+        display: inline-block;
+        width: 500px !important;
+        background-color: #ffac4b;
+        
+      }
+      .right{
+        display: unset !important;
+        background-color: #a73340;
+        width: 500px;
+        .name{
+          background-color: red;
+        }
+        .total{
+          background-color: blue;
+          width: 30%;
+        }
+        .quantity {
+          background-color: #898989;
+        }
+        .unitPrice {
+          background-color: #a73340;
+          .price {
+            font-size: 18px;
+            color: #272727;
+          }
+        }
+      }
+    }
+  }
+  
+}

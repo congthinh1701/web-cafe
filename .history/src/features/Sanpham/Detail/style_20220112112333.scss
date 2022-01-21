@@ -1,0 +1,29 @@
+.detail {
+  display: flex;
+  --columns: 2;
+  .detailLeft {
+    width: calc(100% / var(--columns) - 10%);
+    background-color: red;
+  }
+  .detailRight {
+    width: calc(100% / var(--columns) + 10%);
+    background-color: blue;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 986px) {
+  .detail {
+    display: flex;
+    --columns: 1;
+    .detailLeft {
+      width: calc(100% / var(--columns));
+      background-color: red;
+    }
+    .detailRight {
+      width: calc(100% / var(--columns));
+      background-color: blue;
+      margin-left: unset;
+      
+    }
+  }
+}

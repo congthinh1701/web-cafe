@@ -1,0 +1,4 @@
+
+const detailReducer= (state, action)=> {
+
+}

@@ -1,0 +1,47 @@
+
+.bill{
+    display: flex;
+    .address{
+        width: 50%;
+        .select{
+            margin-top: 25px;
+        }
+    }
+    .payment{
+        margin-left: 25px;
+        width: 50%;
+        margin-top: 25px;
+        background-color: #fafafa;
+        .listProduct{
+            padding: 15px;
+            .product{
+                display: flex;
+                .img{
+                    width: 25%;
+                    height: 50px;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }   
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:968px){
+    .bill{
+        display: unset;
+        .address{
+            width: 100%;
+            .select{
+                margin-top: 25px;
+            }
+        }
+        .payment{
+            width: 100%;
+            background-color: red;
+            margin-top: 20px;
+        }
+    }
+}

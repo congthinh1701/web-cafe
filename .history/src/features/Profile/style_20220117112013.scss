@@ -1,0 +1,16 @@
+
+.profile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    .profileAvatar{
+        width: 220px;
+        height: 10px;
+        background-color: red;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

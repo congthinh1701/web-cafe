@@ -1,0 +1,16 @@
+
+.bill{
+    display: flex;
+    .address{
+        width: 50%;
+        .select{
+            margin-top: 25px;
+        }
+    }
+    .payment{
+        width: 50%;
+        background-color: red;
+    }
+}
+
+@media(max-width:968px)

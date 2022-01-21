@@ -1,0 +1,12 @@
+
+.bill{
+    display: flex;
+    .address{
+        width: 50%;
+        background-color: black;
+    }
+    .payment{
+        width: 50%;
+        background-color: red;
+    }
+}

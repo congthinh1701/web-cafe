@@ -1,0 +1,63 @@
+.bill {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  .address {
+    .select {
+      margin-top: 25px;
+    }
+  }
+  .payment {
+    width: 100%;
+   
+    background-color: #fafafa;
+    .listProduct {
+      padding: 10px;
+      width: 100%;  
+      .product {
+        display: flex;
+        .img {
+          width: 22%;
+          height: 50px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .nameProduct {
+          width: 57%;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .priceProduct {
+          width: 13%;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .discountCode{
+      display: flex;
+    }
+  }
+  .transport{
+    background-color: burlywood;
+  }
+}
+
+@media (max-width: 968px) {
+  .bill {
+    display: unset;
+    .address {
+      width: 100%;
+      .select {
+        margin-top: 25px;
+      }
+    }
+    .payment {
+      width: 100%;
+      background-color: red;
+      margin-top: 20px;
+    }
+  }
+}

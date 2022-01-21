@@ -1,0 +1,33 @@
+
+
+import React from 'react';
+import '../style.scss'
+
+function InfomationOrder(props) {
+    return (
+        <div>
+            <div className="infomationOrder">
+            <div className="continue">
+              <a href="/#">
+                Tiếp tục mua hàng <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div className="infomation">
+              <div className="title">
+                <p>Thông tin đơn hàng</p>
+              </div>
+              <hr />
+              <div className="price">
+                <p>Tổng tiền :</p>
+                <p>50000đ</p>
+              </div>
+              <hr />
+              <p>Bạn có thể nhập mã giảm giá ở trang thanh toán</p>
+              <button>THANH TOÁN</button>
+            </div>
+          </div>
+        </div>
+    );
+}
+
+export default InfomationOrder;

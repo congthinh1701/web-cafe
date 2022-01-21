@@ -1,0 +1,48 @@
+import React, { useEffect, useState } from "react";
+import styles from "../style.module.scss";
+import clsx from "clsx";
+import banner_section6 from "../../../assets/img/banner_section6.jpg";
+import { firebaseConnect } from "../../../firebase/firebaseConnect";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import ListReview from "./ListReview";
+
+function Section6() {
+  const [review, setReview] = useState([]);
+  
+  useEffect(() => {
+    firebaseConnect
+      .database()
+      .ref("CustomerReview")
+      .on("value", (snapshot) => {
+        let list = [];
+        snapshot.forEach((snap) => {
+          list.push(snap.val());
+        });
+        setReview(list);
+      });
+  }, []);
+  return (
+    <div>
+      <div
+        className={clsx(styles.section6)}
+        style={{
+          backgroundImage: `url(${banner_section6})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+          height: "500px",
+        }}
+      >
+        <div className={clsx(styles.titleText)}>
+          <h2>Khách hàng nói gì</h2>
+          <p>1500+ Khách hàng hài lòng</p>
+        </div>
+        <ListReview review={review} />
+      </div>
+    </div>
+  );
+}
+
+export default Section6;

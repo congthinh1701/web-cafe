@@ -1,0 +1,115 @@
+.bill {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  .address {
+    .select {
+      margin-top: 25px;
+    }
+  }
+  .payment {
+    width: 100%;
+    margin-top: 25px;
+    background-color: #fafafa;
+    .listProduct {
+      padding: 10px;
+      width: 100%;
+      .product {
+        display: flex;
+        .img {
+          width: 22%;
+          height: 50px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .nameProduct {
+          width: 57%;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        .priceProduct {
+          width: 13%;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .discountCode {
+      display: flex;
+      margin: 15px;
+      input {
+        width: 100%;
+        height: 45px;
+      }
+      button {
+        width: 120px;
+        height: 45px;
+        background-color: blueviolet;
+        margin-left: 10px;
+        text-align: center;
+      }
+    }
+    .totalPrice {
+      margin: 15px;
+      .subtotal {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #717171;
+          font-weight: 500;
+        }
+      }
+      .totalShipper {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #717171;
+          font-weight: 500;
+        }
+      }
+    }
+    .submit{
+      margin: 15px;
+      display: flex;
+      justify-content: space-between;
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        color: #ffac4b;
+      }
+      button{
+        width: 120px;
+        height: 50px;
+        background-color: blueviolet;
+        border-radius: 5px;
+        border: none;
+        color: white;
+      }
+    }
+  }
+  .transport {
+    background-color: burlywood;
+  }
+}
+
+@media (max-width: 1068px) {
+  .bill {
+    display: unset;
+    .address {
+      width: 100%;
+      .select {
+        margin-top: 25px;
+      }
+    }
+    .payment {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .submit{
+      m
+    }
+  }
+}

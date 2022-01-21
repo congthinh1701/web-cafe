@@ -1,0 +1,49 @@
+
+
+.informationOrder {
+    background-color: red;
+    width: calc(100% / var(--columns) - 27%) !important;
+    margin: -32px 0 0 20px;
+    .continue {
+      text-align: right;
+      margin-bottom: 10px;
+      font-size: 16px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .information {
+      border: 1px solid aqua;
+      padding: 10px;
+      .title {
+        font-size: 17px;
+        font-weight: bold;
+        margin: 5px 0 10px 0;
+        color: #272727;
+        text-align: left;
+      }
+    }
+    .price {
+      display: flex;
+      justify-content: space-between;
+      p {
+        color: #272727;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+    button {
+      background-color: black;
+      width: 100%;
+      height: 40px;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+  }

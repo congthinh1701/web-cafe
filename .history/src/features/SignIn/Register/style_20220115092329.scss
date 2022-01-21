@@ -1,0 +1,60 @@
+.title-page {
+  color: #464646;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.title-head {
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #212b25;
+  margin-bottom: 17px;
+  padding-top: 12px;
+}
+.from-group {
+  margin-top: 20px;
+  width: 50%;
+  label {
+    font-weight: bold;
+  }
+}
+.button {
+  background-color: #ffac4b;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 25px;
+  border: none;
+  padding: 10px;
+  width: 140px;
+}
+.button:hover {
+  background-color: black;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+.sign-in {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #212b25;
+  font-size: 25px;
+  .facebook {
+    width: 140px;
+    padding: unset;
+    border: none;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .google {
+    width: 140px;
+    margin-left: 20px;
+    padding: unset;
+    border: none;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+
+
+.detail{
+    display: flex;
+    --columns:2;
+    .detailLeft {
+        width: calc(100% / var(--columns) - 10%);
+    }
+    .detailLeft {
+        width: calc(100% / var(--columns) + 10%);
+    }
+}
